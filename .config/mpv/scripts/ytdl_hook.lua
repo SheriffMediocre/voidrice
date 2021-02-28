@@ -8,7 +8,7 @@ local o = {
     use_manifests = false,
     all_formats = false,
     force_all_formats = true,
-    ytdl_path = "youtube-dlc",
+    ytdl_path = "yt-dlp",
 }
 
 local ytdl = {

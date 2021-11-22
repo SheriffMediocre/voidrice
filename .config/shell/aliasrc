@@ -25,6 +25,7 @@ alias \
 	rsu="rs -u" \
 	df="df -h" \
 	dd="sudo dd status=progress" \
+	sx="sxiv -a" \
 
 # Colorize commands when possible.
 alias \

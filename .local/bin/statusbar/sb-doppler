@@ -190,7 +190,7 @@ getdoppler() {
 	notify-send "🌦️ Doppler RADAR" "Pulling most recent Doppler RADAR for $loc."
 	curl -sL "https://radar.weather.gov/ridge/lite/${loc}_loop.gif" > "$doppler" ;}
 
-showdoppler() { setsid -f mpv --no-osc --loop=inf --no-terminal "$doppler" ;}
+showdoppler() { setsid -f sxiv -a "$doppler" ;}
 
 case $BLOCK_BUTTON in
 	1) [ ! -f "$radarloc" ] && pickloc && getdoppler

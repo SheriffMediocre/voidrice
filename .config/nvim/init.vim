@@ -17,6 +17,7 @@ Plug 'vimwiki/vimwiki'
 Plug 'vim-airline/vim-airline'
 Plug 'tpope/vim-commentary'
 Plug 'ap/vim-css-color'
+Plug 'dylanaraps/wal.vim'
 call plug#end()
 
 set title
@@ -29,6 +30,7 @@ set noshowmode
 set noruler
 set laststatus=0
 set noshowcmd
+" colorscheme wal
 
 " Some basics:
 	nnoremap c "_c

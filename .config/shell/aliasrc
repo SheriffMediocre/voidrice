@@ -13,36 +13,49 @@ done; unset command
 
 # Verbosity and settings that you pretty much just always are going to want.
 alias \
-	cp="cp -iv" \
+	cp="cp -irv" \
 	mv="mv -iv" \
 	rm="rm -vI" \
 	bc="bc -ql" \
 	mkd="mkdir -pv" \
-	yt="youtube-dl --add-metadata -i" \
+	yt="yt-dlp --add-metadata -i" \
 	yta="yt -x -f bestaudio/best" \
-	ffmpeg="ffmpeg -hide_banner"
+	ff="ffmpeg -hide_banner" \
+	rs="rsync -vrP" \
+	rsu="rs -u" \
+	df="df -h" \
+	dd="sudo dd status=progress" \
 
 # Colorize commands when possible.
 alias \
 	ls="ls -hN --color=auto --group-directories-first" \
 	grep="grep --color=auto" \
 	diff="diff --color=auto" \
-	ccat="highlight --out-format=ansi"
+	ccat="highlight --out-format=ansi" \
 
 # These common commands are just too long! Abbreviate them.
 alias \
 	ka="killall" \
 	g="git" \
+	s="sudo " \
+	cl="clear" \
 	trem="transmission-remote" \
 	YT="youtube-viewer" \
-	sdn="shutdown -h now" \
+	sdn="poweroff" \
 	e="$EDITOR" \
 	v="$EDITOR" \
 	p="pacman" \
+	y="yay" \
 	xi="sudo xbps-install" \
 	xr="sudo xbps-remove -R" \
 	xq="xbps-query" \
-	z="zathura"
+	z="zathura" \
+	mc="sudo mount.cifs" \
+	dh="sudo dhcpcd" \
+	cr="sudo cryptsetup" \
+	cdda="mpv cdda:// --cdrom-device=/dev/sr0" \
+	dvd="mpv dvd:// --dvd-device=/dev/sr0" \
+	bd="mpv bd:// --bluray-device=/dev/sr0" \
 
 alias \
 	magit="nvim -c MagitOnly" \

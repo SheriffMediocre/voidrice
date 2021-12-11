@@ -1,0 +1,3 @@
+#!/bin/sh
+
+tmux attach-session -t profanity || tmux new-session -s profanity -d profanity

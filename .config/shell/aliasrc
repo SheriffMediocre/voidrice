@@ -7,7 +7,7 @@
 [ -f "$XINITRC" ] && alias startx="startx $XINITRC"
 
 # sudo not required for some system commands
-for command in mount umount sv pacman updatedb su shutdown poweroff reboot ; do
+for command in mount umount sv pacman updatedb su shutdown poweroff reboot emerge eselect systemctl rc-update dispatch-conf; do
 	alias $command="sudo $command"
 done; unset command
 
@@ -22,7 +22,7 @@ alias \
 	yta="yt -x -f bestaudio/best" \
 	ff="ffmpeg -hide_banner" \
 	rs="rsync -vrP" \
-	rsu="rs -u" \
+	rsu="rs -u --delete-after" \
 	df="df -h" \
 	dd="sudo dd status=progress" \
 	sx="sxiv -a" \
@@ -50,6 +50,10 @@ alias \
 	xi="sudo xbps-install" \
 	xr="sudo xbps-remove -R" \
 	xq="xbps-query" \
+	em="emerge --autounmask=y --autounmask-write" \
+	dc="dispatch-conf" \
+	em="emaint sync -r" \
+	es="eselect repository" \
 	z="zathura" \
 	mc="sudo mount.cifs" \
 	dh="sudo dhcpcd" \
@@ -57,6 +61,7 @@ alias \
 	cdda="mpv cdda:// --cdrom-device=/dev/sr0" \
 	dvd="mpv dvd:// --dvd-device=/dev/sr0" \
 	bd="mpv bd:// --bluray-device=/dev/sr0" \
+	ll="ls -l" \
 
 alias \
 	magit="nvim -c MagitOnly" \

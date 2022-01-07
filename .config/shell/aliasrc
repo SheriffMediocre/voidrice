@@ -22,7 +22,7 @@ alias \
 	yta="yt -x -f bestaudio/best" \
 	ff="ffmpeg -hide_banner" \
 	rs="rsync -vrP" \
-	rsu="rs -u --delete-after" \
+	rsu="rs -u" \
 	df="df -h" \
 	dd="sudo dd status=progress" \
 	sx="sxiv -a" \

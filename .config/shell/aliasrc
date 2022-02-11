@@ -7,18 +7,18 @@
 [ -f "$XINITRC" ] && alias startx="startx $XINITRC"
 
 # sudo not required for some system commands
-for command in mount umount sv pacman updatedb su shutdown poweroff reboot ; do
+for command in mount umount sv pacman updatedb su shutdown poweroff reboot emerge eselect systemctl rc-update dispatch-conf dhcpcd; do
 	alias $command="sudo $command"
 done; unset command
 
 # Verbosity and settings that you pretty much just always are going to want.
 alias \
-	cp="cp -irv" \
-	mv="mv -iv" \
+	cp="cp -vir" \
+	mv="mv -vi" \
 	rm="rm -vI" \
 	bc="bc -ql" \
 	mkd="mkdir -pv" \
-	yt="yt-dlp --add-metadata -i" \
+	yt="yt-dlp --add-metadata -i --embed-thumbnail" \
 	yta="yt -x -f bestaudio/best" \
 	ff="ffmpeg -hide_banner" \
 	rs="rsync -vrP" \
@@ -50,13 +50,18 @@ alias \
 	xi="sudo xbps-install" \
 	xr="sudo xbps-remove -R" \
 	xq="xbps-query" \
+	em="emerge --autounmask=y --autounmask-write" \
+	dc="dispatch-conf" \
+	ema="emaint sync -r" \
+	es="eselect repository" \
 	z="zathura" \
 	mc="sudo mount.cifs" \
-	dh="sudo dhcpcd" \
+	dh="dhcpcd" \
 	cr="sudo cryptsetup" \
 	cdda="mpv cdda:// --cdrom-device=/dev/sr0" \
 	dvd="mpv dvd:// --dvd-device=/dev/sr0" \
 	bd="mpv bd:// --bluray-device=/dev/sr0" \
+	ll="ls -l" \
 
 alias \
 	magit="nvim -c MagitOnly" \

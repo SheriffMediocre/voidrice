@@ -52,7 +52,11 @@ alias \
 	xq="xbps-query" \
 	em="emerge --autounmask=y --autounmask-write" \
 	dc="dispatch-conf" \
+<<<<<<< HEAD
 	ema="emaint sync -r" \
+=======
+	em="emaint sync -r" \
+>>>>>>> 87404741ca5dff40749b466c98c7bb5e0be119ca
 	es="eselect repository" \
 	z="zathura" \
 	mc="sudo mount.cifs" \

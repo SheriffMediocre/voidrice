@@ -1,0 +1,5 @@
+#!/bin/sh
+
+notify-send "🔃 Updating the Pacman Cache" "This can take a few minutes..."
+
+tmux new-session -s updatecache -d "sudo rsync -vruPW $1:/var/cache/pacman/pkg /var/cache/pacman && notify-send '✅ Cache Update Completed Successfully!' || notify-send '❎ Cache Update Failed' 'Please ensure your root user has the correct ssh keys and that you're using the device's correct ip address'"

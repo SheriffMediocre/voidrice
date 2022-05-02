@@ -18,7 +18,7 @@ alias \
 	rm="rm -vI" \
 	bc="bc -ql" \
 	mkd="mkdir -pv" \
-	yt="yt-dlp --add-metadata -i --embed-thumbnail" \
+	yt="yt-dlp --embed-metadata -i --embed-thumbnail" \
 	yta="yt -x -f bestaudio/best" \
 	ff="ffmpeg -hide_banner" \
 	rs="rsync -vrP" \
@@ -33,6 +33,10 @@ alias \
 	grep="grep --color=auto" \
 	diff="diff --color=auto" \
 	ccat="highlight --out-format=ansi" \
+<<<<<<< HEAD
+=======
+	ip="ip -color=auto"
+>>>>>>> fc6dc7b761ad639adc23e75bcf202bfe159fcc82
 
 # These common commands are just too long! Abbreviate them.
 alias \
@@ -64,6 +68,7 @@ alias \
 	ll="ls -l" \
 
 alias \
+	lf="lfub" \
 	magit="nvim -c MagitOnly" \
 	ref="shortcuts >/dev/null; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutrc ; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/zshnameddirrc" \
 	weath="less -S ${XDG_DATA_HOME:-$HOME/.local/share}/weatherreport" \

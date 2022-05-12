@@ -17,7 +17,8 @@ Plug 'vimwiki/vimwiki'
 Plug 'vim-airline/vim-airline'
 Plug 'tpope/vim-commentary'
 Plug 'ap/vim-css-color'
-Plug 'dylanaraps/wal.vim'
+Plug 'jamessan/vim-gnupg'
+" Plug 'dylanaraps/wal.vim'
 call plug#end()
 
 set title

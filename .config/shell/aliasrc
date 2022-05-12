@@ -7,7 +7,7 @@
 [ -f "$XINITRC" ] && alias startx="startx $XINITRC"
 
 # sudo not required for some system commands
-for command in mount umount sv pacman updatedb su shutdown poweroff reboot emerge eselect systemctl rc-update dispatch-conf dhcpcd; do
+for command in mount umount sv pacman updatedb su shutdown poweroff reboot emerge eselect systemctl rc-update rc-service dispatch-conf dhcpcd; do
 	alias $command="sudo $command"
 done; unset command
 
@@ -33,10 +33,7 @@ alias \
 	grep="grep --color=auto" \
 	diff="diff --color=auto" \
 	ccat="highlight --out-format=ansi" \
-<<<<<<< HEAD
-=======
 	ip="ip -color=auto"
->>>>>>> fc6dc7b761ad639adc23e75bcf202bfe159fcc82
 
 # These common commands are just too long! Abbreviate them.
 alias \
@@ -66,6 +63,8 @@ alias \
 	dvd="mpv dvd:// --dvd-device=/dev/sr0" \
 	bd="mpv bd:// --bluray-device=/dev/sr0" \
 	ll="ls -l" \
+	la="ls -a" \
+	lla="ls -la" \
 
 alias \
 	lf="lfub" \

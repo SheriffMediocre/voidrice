@@ -18,6 +18,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'tpope/vim-commentary'
 Plug 'ap/vim-css-color'
 Plug 'jamessan/vim-gnupg'
+Plug 'gentoo/gentoo-syntax'
 " Plug 'dylanaraps/wal.vim'
 call plug#end()
 

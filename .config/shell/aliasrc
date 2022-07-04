@@ -7,7 +7,7 @@
 [ -f "$XINITRC" ] && alias startx="startx $XINITRC"
 
 # sudo not required for some system commands
-for command in mount umount sv pacman updatedb su shutdown poweroff reboot emerge eselect systemctl rc-update rc-service dispatch-conf dhcpcd; do
+for command in mount umount sv pacman updatedb su shutdown poweroff reboot emerge eselect rc-update rc-service dispatch-conf dhcpcd; do
 	alias $command="sudo $command"
 done; unset command
 
@@ -48,9 +48,6 @@ alias \
 	v="$EDITOR" \
 	p="pacman" \
 	y="yay" \
-	xi="sudo xbps-install" \
-	xr="sudo xbps-remove -R" \
-	xq="xbps-query" \
 	em="emerge --autounmask=y --autounmask-write" \
 	dc="dispatch-conf" \
 	ema="emaint sync -r" \

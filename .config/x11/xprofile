@@ -8,7 +8,7 @@ setbg &			# set the background with the `setbg` script
 #xrdb ${XDG_CONFIG_HOME:-$HOME/.config}/x11/xresources & xrdbpid=$!	# Uncomment to use Xresources colors/settings on startup
 remaps &		# run the remaps script, switching caps/esc and more; check it for more info
 screenset &		# sets the screen resolution and starts picom
-#pipestart & 		# starts the required pipewire services
+#xscreensaver --no-splash &
 
 autostart="mpd dunst pipewire unclutter"
 

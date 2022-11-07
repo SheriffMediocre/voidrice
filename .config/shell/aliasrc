@@ -64,6 +64,7 @@ alias \
 	ll="ls -l" \
 	la="ls -a" \
 	lla="ls -la" \
+	sy="systemctl" \
 
 alias \
 	lf="lfub" \

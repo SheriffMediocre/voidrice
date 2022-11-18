@@ -1,4 +1,4 @@
 #!/bin/sh
 sleep 1 #wait for dwm to finish loading
 #xrandr -s 1024x768 && setbg #set the screen resolution before setting the background if needed
-picom -b --experimental-backends #picom for transparency and removing screen tearing
+picom -b #picom for transparency and removing screen tearing

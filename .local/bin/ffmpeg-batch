@@ -13,7 +13,7 @@ for filename in "$srcDir"/*.$srcExt; do
 	basePath=${filename%.*}
 	baseName=${basePath##*/}
 
-	ffmpeg -i "$filename" $opts "$destDir"/"$baseName"."$destExt"
+	ffmpeg -i "$filename" $opts "$destDir"/"$baseName"."$destExt" & #le epic posix-compliant parallelization
 
 done
 

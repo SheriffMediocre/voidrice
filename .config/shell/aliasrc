@@ -65,6 +65,7 @@ alias \
 	la="ls -a" \
 	lla="ls -la" \
 	sy="systemctl" \
+	mnv="mpv --no-video" \
 
 alias \
 	lf="lfub" \

@@ -65,6 +65,7 @@ alias \
 	la="ls -a" \
 	lla="ls -la" \
 	sy="systemctl" \
+	mnv="mpv --no-video" \
 	pcc="p -Sc --noconfirm && s rm /var/cache/pacman/pkg/*part" \
 
 alias \

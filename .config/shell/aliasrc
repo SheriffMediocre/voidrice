@@ -34,7 +34,7 @@ alias \
 	rsu="rs -u" \
 	df="df -h" \
 	dd="sudo dd status=progress" \
-	sx="sxiv -a" \
+	sx="nsxiv -a" \
 	ffmpeg="ffmpeg -hide_banner" \
 
 # Colorize commands when possible.
